@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "letter": "ا",
+    "name": "ʾalif",
+    "example": {
+      "image": "lion.png",
+      "arabicWord": "أسد",
+      "transliteration": "ʾasad",
+      "translation": "lion"
+    }
+  },
+  {
+    "id": 2,
+    "letter": "ب",
+    "name": "bāʾ",
+    "example": {
+      "image": "door.png",
+      "arabicWord": "باب",
+      "transliteration": "bāb",
+      "translation": "door"
+    }
+  },
+  {
+    "id": 3,
+    "letter": "ت",
+    "name": "tāʾ",
+    "example": {
+      "image": "apple.png",
+      "arabicWord": "تفاح",
+      "transliteration": "tuffāḥ",
+      "translation": "apple"
+    }
+  },
+  {
+    "id": 4,
+    "letter": "ث",
+    "name": "ṯāʾ",
+    "example": {
+      "image": "fox.png",
+      "arabicWord": "ثعلب",
+      "transliteration": "ṯaʿlab",
+      "translation": "fox"
+    }
+  },
+  {
+    "id": 5,
+    "letter": "ج",
+    "name": "ǧīm",
+    "example": {
+      "image": "camel.png",
+      "arabicWord": "جمل",
+      "transliteration": "ǧamal",
+      "translation": "camel"
+    }
+  },
+  {
+    "id": 6,
+    "letter": "ح",
+    "name": "ḥāʾ",
+    "example": {
+      "image": "rock.png",
+      "arabicWord": "حجر",
+      "transliteration": "ḥaǧar",
+      "translation": "rock"
+    }
+  },
+  {
+    "id": 7,
+    "letter": "خ",
+    "name": "ḫāʾ",
+    "example": {
+      "image": "bread.png",
+      "arabicWord": "خبز",
+      "transliteration": "ḫubz",
+      "translation": "bread"
+    }
+  },
+  {
+    "id": 8,
+    "letter": "د",
+    "name": "dāl",
+    "example": {
+      "image": "bear.png",
+      "arabicWord": "دب",
+      "transliteration": "dubb",
+      "translation": "bear"
+    }
+  },
+  {
+    "id": 9,
+    "letter": "ذ",
+    "name": "ḏāl",
+    "example": {
+      "image": "wolf.png",
+      "arabicWord": "ذئب",
+      "transliteration": "ḏiʾb",
+      "translation": "wolf"
+    }
+  },
+  {
+    "id": 10,
+    "letter": "ر",
+    "name": "rāʾ",
+    "example": {
+      "image": "head.png",
+      "arabicWord": "رأس",
+      "transliteration": "raʾs",
+      "translation": "head"
+    }
+  },
+  {
+    "id": 11,
+    "letter": "ز",
+    "name": "zayn",
+    "example": {
+      "image": "flower.png",
+      "arabicWord": "زهرة",
+      "transliteration": "zahra",
+      "translation": "flower"
+    }
+  },
+  {
+    "id": 12,
+    "letter": "س",
+    "name": "sīn",
+    "example": {
+      "image": "fish.png",
+      "arabicWord": "سمك",
+      "transliteration": "samak",
+      "translation": "fish"
+    }
+  },
+  {
+    "id": 13,
+    "letter": "ش",
+    "name": "šīn",
+    "example": {
+      "image": "sun.png",
+      "arabicWord": "شمس",
+      "transliteration": "šams",
+      "translation": "sun"
+    }
+  },
+  {
+    "id": 14,
+    "letter": "ص",
+    "name": "ṣād",
+    "example": {
+      "image": "box.png",
+      "arabicWord": "صندوق",
+      "transliteration": "ṣundūq",
+      "translation": "box"
+    }
+  },
+  {
+    "id": 15,
+    "letter": "ض",
+    "name": "ḍād",
+    "example": {
+      "image": "frog.png",
+      "arabicWord": "ضفدع",
+      "transliteration": "ḍifdaʿ",
+      "translation": "frog"
+    }
+  },
+  {
+    "id": 16,
+    "letter": "ط",
+    "name": "ṭāʾ",
+    "example": {
+      "image": "drum.png",
+      "arabicWord": "طبل",
+      "transliteration": "ṭabl",
+      "translation": "drum"
+    }
+  },
+  {
+    "id": 17,
+    "letter": "ظ",
+    "name": "ẓāʾ",
+    "example": {
+      "image": "gazelle.png",
+      "arabicWord": "ظبي",
+      "transliteration": "ẓaby",
+      "translation": "gazelle"
+    }
+  },
+  {
+    "id": 18,
+    "letter": "ع",
+    "name": "ʿayn",
+    "example": {
+      "image": "eye.png",
+      "arabicWord": "عين",
+      "transliteration": "ʿayn",
+      "translation": "eye"
+    }
+  },
+  {
+    "id": 19,
+    "letter": "غ",
+    "name": "ġayn",
+    "example": {
+      "image": "cloud.png",
+      "arabicWord": "غيمة",
+      "transliteration": "ġayma",
+      "translation": "cloud"
+    }
+  },
+  {
+    "id": 20,
+    "letter": "ف",
+    "name": "fāʾ",
+    "example": {
+      "image": "elephant.png",
+      "arabicWord": "فيل",
+      "transliteration": "fīl",
+      "translation": "elephant"
+    }
+  },
+  {
+    "id": 21,
+    "letter": "ق",
+    "name": "qāf",
+    "example": {
+      "image": "moon.png",
+      "arabicWord": "قمر",
+      "transliteration": "qamar",
+      "translation": "moon"
+    }
+  },
+  {
+    "id": 22,
+    "letter": "ك",
+    "name": "kāf",
+    "example": {
+      "image": "dog.png",
+      "arabicWord": "كلب",
+      "transliteration": "kalb",
+      "translation": "dog"
+    }
+  },
+  {
+    "id": 23,
+    "letter": "ل",
+    "name": "lām",
+    "example": {
+      "image": "lemon.png",
+      "arabicWord": "ليمون",
+      "transliteration": "laymūn",
+      "translation": "lemon"
+    }
+  },
+  {
+    "id": 24,
+    "letter": "م",
+    "name": "mīm",
+    "example": {
+      "image": "banana.png",
+      "arabicWord": "موز",
+      "transliteration": "mawz",
+      "translation": "banana"
+    }
+  },
+  {
+    "id": 25,
+    "letter": "ن",
+    "name": "nūn",
+    "example": {
+      "image": "bee.png",
+      "arabicWord": "نحلة",
+      "transliteration": "naḥla",
+      "translation": "bee"
+    }
+  },
+  {
+    "id": 26,
+    "letter": "ه",
+    "name": "hāʾ",
+    "example": {
+      "image": "gift.png",
+      "arabicWord": "هدية",
+      "transliteration": "hadiyya",
+      "translation": "gift"
+    }
+  },
+  {
+    "id": 27,
+    "letter": "و",
+    "name": "wāw",
+    "example": {
+      "image": "rose.png",
+      "arabicWord": "وردة",
+      "transliteration": "warda",
+      "translation": "rose"
+    }
+  },
+  {
+    "id": 28,
+    "letter": "ي",
+    "name": "yāʾ",
+    "example": {
+      "image": "hand.png",
+      "arabicWord": "يد",
+      "transliteration": "yad",
+      "translation": "hand"
+    }
+  }
+]
