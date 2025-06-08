@@ -1,10 +1,10 @@
-import { useState } from "react";
-import Modal from "./Modal";
+import React, { useState } from "react";
+import ModalInfo from "./ModalInfo";
 
-import React from "react";
+function FlipCards({ letters }) {
+  const [openModalId, setOpenModalId] = useState(null);
 
-function FlipCards() {
-  return <div>FlipCards</div>;
+  return;
 }
 
 export default FlipCards;

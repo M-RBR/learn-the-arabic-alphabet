@@ -3,11 +3,15 @@ import { useState } from "react";
 import FlipCards from "./Components/FlipCards";
 
 function App() {
+  const [letters, setLetters] = useState(data);
+
   return (
     <div>
       <h1>Learn the Arabic alphabet</h1>
 
-      <div>FlipCards</div>
+      <div>
+        <FlipCards letters={letters} />
+      </div>
     </div>
   );
 }
