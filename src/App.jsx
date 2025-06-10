@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState } from "react";
 import FlipCards from "./Components/FlipCards";
 import data from "./data/arabic_letters.json";
