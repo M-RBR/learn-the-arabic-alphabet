@@ -1,8 +1,9 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
 @import "tailwindcss";
 
 .preserve-3d {
   transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .backface-hidden {
@@ -17,7 +18,9 @@
   transform: rotateY(180deg);
 }
 
-/* Custom styles */
+/*
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -30,15 +33,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/*
-
-
-.font-amiri {
-  font-family: "Amiri", serif;
-}
-
-*/
 
 a {
   font-weight: 500;
@@ -94,6 +88,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+*/
 
 /* 
 

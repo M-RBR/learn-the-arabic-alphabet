@@ -3,38 +3,38 @@ import React from "react";
 function ModalInfo({ letter, onClose }) {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white p-6 rounded-xl max-w-sm w-full relative">
-        {/* Close button */}
+      <div className="bg-amber-50 p-6 rounded-xl max-w-sm w-full relative border-2 border-amber-200 shadow-2xl">
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl"
-          aria-label="Close modal"
+          className="absolute top-2 right-2 text-amber-800 hover:text-amber-600 text-2xl"
         >
           &times;
         </button>
 
-        {/* Image */}
         <img
           src={`/assets/images/${letter.example.image}`}
           alt={letter.example.translation}
-          className="w-48 h-48 object-contain mx-auto mb-4"
+          className="w-48 h-48 object-contain mx-auto mb-4 rounded-lg"
         />
 
-        {/* Content with hyphen prefixes */}
-        <div className="text-left space-y-2">
+        <div className="flex flex-col items-center text-center">
           <p className="text-xl">
-            <span className="font-semibold">Arabic: </span>
-            <span className="text-2xl" dir="rtl">
+            <span className="font-semibold text-amber-900">Arabic: </span>
+            <span className="text-2xl text-amber-800" dir="rtl">
               {letter.example.arabicWord}
             </span>
           </p>
           <p className="text-lg">
-            <span className="font-semibold">Transliteration: </span>
-            {letter.example.transliteration}
+            <span className="font-semibold text-amber-900">
+              Transliteration:{" "}
+            </span>
+            <span className="italic text-amber-700">
+              {letter.example.transliteration}
+            </span>
           </p>
           <p className="text-lg">
-            <span className="font-semibold">English: </span>
-            {letter.example.translation}
+            <span className="font-semibold text-amber-900">English: </span>
+            <span className="text-amber-700">{letter.example.translation}</span>
           </p>
         </div>
       </div>

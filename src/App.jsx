@@ -17,30 +17,28 @@ function App() {
   };
 
   return (
-    <div
-      className="min-h-screen bg-repeat bg-center p-4"
-      style={{
-        backgroundColor: "#614a04",
-        backgroundImage: `url("/assets/images/purty-wood.png")`,
-      }}
-    >
-      <h1 className="text-3xl font-bold text-center mb-4 text-white drop-shadow">
+    // Updated App.jsx container
+    <div className="min-h-screen p-4 bg-amber-50 bg-opacity-90 bg-[url('/assets/images/arabesque-pattern.png')] bg-repeat bg-opacity-20">
+      <h1 className="text-4xl font-bold text-center mb-2 text-amber-900 font-amiri">
         Learn the Arabic Alphabet
+        <div className="text-amber-700 text-center text-2xl mt-1">۞</div>
       </h1>
-      <div className="flex justify-center gap-4 mb-6">
+
+      <div className="flex justify-center gap-4 mb-8">
         <button
           onClick={shuffleCards}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          className="px-4 py-2 rounded-lg bg-amber-600 text-white shadow-lg hover:bg-amber-700 transition-colors font-amiri"
         >
           Shuffle
         </button>
         <button
           onClick={sortCards}
-          className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+          className="px-4 py-2 rounded-lg bg-amber-800 text-white shadow-lg hover:bg-amber-900 transition-colors font-amiri"
         >
           Alphabetical Order
         </button>
       </div>
+
       <FlipCards letters={letters} />
     </div>
   );
