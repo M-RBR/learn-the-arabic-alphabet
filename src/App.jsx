@@ -17,8 +17,14 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <h1 className="text-3xl font-bold text-center mb-4">
+    <div
+      className="min-h-screen bg-repeat bg-center p-4"
+      style={{
+        backgroundColor: "#614c0e",
+        backgroundImage: `url("/assets/images/tileable-wood-colored.png")`,
+      }}
+    >
+      <h1 className="text-3xl font-bold text-center mb-4 text-white drop-shadow">
         Learn the Arabic Alphabet
       </h1>
       <div className="flex justify-center gap-4 mb-6">
