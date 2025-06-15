@@ -11,28 +11,21 @@ function FlipCards({ letters }) {
         const isFlipped = flippedId === letter.id;
 
         return (
-          <div
-            key={letter.id}
-            className="relative w-64 h-64 cursor-pointer"
-            onClick={() => setFlippedId(isFlipped ? null : letter.id)}
-          >
-            {/* Card container with perspective */}
-            <div className="relative w-full h-full transition-all duration-500 preserve-3d">
+          <div key={letter.id} className="relative w-64 h-64">
+            {/* Card with perspective and flip */}
+            <div
+              className={`relative w-full h-full transition-transform duration-500 preserve-3d ${
+                isFlipped ? "rotate-y-180" : "rotate-y-0"
+              }`}
+              onClick={() => setFlippedId(isFlipped ? null : letter.id)} // Toggle on outer
+            >
               {/* Front */}
-              <div
-                className={`absolute w-full h-full bg-white rounded-xl shadow-lg flex items-center justify-center text-6xl backface-hidden ${
-                  isFlipped ? "rotate-y-180" : "rotate-y-0"
-                }`}
-              >
+              <div className="absolute w-full h-full bg-white rounded-xl shadow-lg flex items-center justify-center text-6xl backface-hidden">
                 {letter.letter}
               </div>
 
               {/* Back */}
-              <div
-                className={`absolute w-full h-full bg-yellow-100 rounded-xl shadow-lg flex flex-col items-center justify-center text-center p-4 backface-hidden ${
-                  isFlipped ? "rotate-y-0" : "rotate-y-180"
-                }`}
-              >
+              <div className="absolute w-full h-full bg-yellow-100 rounded-xl shadow-lg flex flex-col items-center justify-center text-center p-4 backface-hidden transform rotate-y-180">
                 <h2 className="text-2xl italic">{letter.name}</h2>
                 <button
                   className="mt-4 px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600"
@@ -69,17 +62,19 @@ function FlipCards({ letters }) {
 
             <div className="text-left space-y-2">
               <p className="text-xl">
-                <span className="font-semibold">-Arabic: </span>
+                <span className="font-semibold">Arabic: </span>
                 <span className="text-2xl" dir="rtl">
                   {modalLetter.example.arabicWord}
                 </span>
               </p>
-              <p className="text-lg italic">
-                <span className="font-semibold">-Transliteration: </span>
-                {modalLetter.example.transliteration}
+              <p className="text-lg">
+                <span className="font-semibold">Transliteration: </span>
+                <span className="italic">
+                  {modalLetter.example.transliteration}
+                </span>
               </p>
               <p className="text-lg">
-                <span className="font-semibold">-English: </span>
+                <span className="font-semibold">English: </span>
                 {modalLetter.example.translation}
               </p>
             </div>

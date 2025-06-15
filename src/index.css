@@ -1,3 +1,4 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap"); */
 @import "tailwindcss";
 
 .preserve-3d {
@@ -30,6 +31,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*
+
+
+.font-amiri {
+  font-family: "Amiri", serif;
+}
+
+*/
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -43,6 +53,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Amiri", serif;
 }
 
 h1 {
