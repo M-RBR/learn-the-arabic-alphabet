@@ -18,7 +18,10 @@ function FlipCards({ letters }) {
   return (
     <div className="flex flex-col items-center gap-6">
       {/* Card Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        dir="rtl"
+      >
         {letters.map((letter) => (
           <Card
             key={letter.id}
@@ -36,7 +39,7 @@ function FlipCards({ letters }) {
   );
 }
 
-// Extracted Card Component
+// Card Component
 function Card({ letter, isFlipped, onCardClick, onExampleClick }) {
   return (
     <div className="relative w-64 h-64 cursor-pointer">
@@ -49,6 +52,9 @@ function Card({ letter, isFlipped, onCardClick, onExampleClick }) {
         {/* Front Side */}
         <div className="absolute w-full h-full bg-amber-50 rounded-xl shadow-lg flex items-center justify-center text-6xl backface-hidden border-2 border-amber-200">
           <span className="text-amber-800">{letter.letter}</span>
+          <span className="text-amber-800 text-xl absolute right-5 bottom-3 size-8">
+            {letter.id}
+          </span>
         </div>
 
         {/* Back Side */}

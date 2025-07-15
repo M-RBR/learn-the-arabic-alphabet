@@ -7,6 +7,8 @@ function App() {
   const letterState = useState(data);
   const currentLetters = letterState[0];
   const updateLetters = letterState[1];
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [showInfoModal, setShowInfoModal] = useState(false);
 
   const shuffleCards = function shuffleTheLetterCards() {
     const originalLettersArray = currentLetters;
@@ -37,21 +39,87 @@ function App() {
 
   return (
     <div className="min-h-screen p-4 bg-amber-50 bg-opacity-90 bg-opacity-20">
-      <h1 className="text-4xl font-bold text-center p-6 text-amber-900 font-amiri">
+      {/* Header */}
+      <h1 className="text-6xl font-bold text-center p-6 text-amber-900 font-amiri">
         Learn the Arabic Alphabet
-        <div className="text-amber-700 text-center text-2xl p-3">۞</div>
       </h1>
 
-      <div className="flex justify-center gap-4 mb-8">
+      {/* Info Button Container */}
+      <div className="flex justify-center mb-6">
+        <div className="relative inline-flex items-center">
+          <button
+            className="w-8 h-8 rounded-full bg-amber-600 text-white flex items-center justify-center text-lg font-bold hover:bg-amber-700 transition-colors"
+            onClick={() => {
+              setShowInfoModal(true);
+              setShowTooltip(false);
+            }}
+            onMouseEnter={() => setShowTooltip(true)}
+            onMouseLeave={() => setShowTooltip(false)}
+            onTouchStart={() => setShowTooltip(true)}
+            onTouchEnd={() => setTimeout(() => setShowTooltip(false), 1000)}
+            aria-label="Information"
+          >
+            i
+          </button>
+          {(showTooltip || window.innerWidth < 640) && (
+            <div className="absolute left-full ml-2 bg-white text-amber-800 px-3 py-2 rounded shadow-lg text-sm whitespace-nowrap border border-amber-200">
+              Click for more info
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Info Modal */}
+      {showInfoModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-amber-50 p-8 rounded-xl max-w-md w-full relative border-2 border-amber-200 shadow-2xl">
+            <button
+              onClick={() => setShowInfoModal(false)}
+              className="absolute top-4 right-4 text-amber-800 hover:text-amber-600 text-2xl"
+            >
+              &times;
+            </button>
+            <h2 className="text-2xl font-bold text-amber-900 mb-4">
+              About this app:
+            </h2>
+            <div className="space-y-4 text-amber-800">
+              <p>
+                This application helps you learn the 28 letters of the Arabic
+                alphabet through interactive flashcards.
+              </p>
+              <p>Each card shows:</p>
+              <ul className="list-disc pl-5">
+                <li>
+                  The Arabic letter and its position in the alphabet on the
+                  front side
+                </li>
+                <li>
+                  Its name on the back side and an 'Example' button. After
+                  clicking, an example of an Arabic word that starts with that
+                  letter is shown, including its transliteration, English
+                  meaning and an image to enhance memorization.{" "}
+                </li>
+              </ul>
+              <p>
+                Use the buttons to shuffle the cards or return them to
+                alphabetical order.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Action Buttons */}
+      <div className="flex flex-col items-center gap-4 mt-2 mb-8">
         <button
           onClick={shuffleCards}
-          className="px-4 py-2 rounded-lg bg-amber-600 text-white shadow-lg hover:bg-amber-700 transition-colors font-amiri"
+          className="px-4 py-2 rounded-lg bg-amber-600 text-white shadow-lg hover:bg-amber-700 transition-colors font-amiri w-48"
         >
           Shuffle Cards
         </button>
         <button
           onClick={sortCards}
-          className="px-4 py-2 rounded-lg bg-amber-800 text-white shadow-lg hover:bg-amber-900 transition-colors font-amiri"
+          className="px-4 py-2 rounded-lg bg-amber-800 text-white shadow-lg hover:bg-amber-900 transition-colors font-amiri w-48"
         >
           Show Alphabetical Order
         </button>
