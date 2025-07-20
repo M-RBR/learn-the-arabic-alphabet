@@ -38,17 +38,15 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen p-4 bg-amber-50 bg-opacity-90 bg-opacity-20">
-      {/* Header */}
+    <div className="min-h-screen p-4 bg-amber-100 bg-opacity-90 bg-opacity-20">
       <h1 className="text-6xl font-bold text-center p-6 text-amber-900 font-amiri">
         Learn the Arabic Alphabet
       </h1>
 
-      {/* Info Button Container */}
       <div className="flex justify-center mb-6">
         <div className="relative inline-flex items-center">
           <button
-            className="w-8 h-8 rounded-full bg-amber-600 text-white flex items-center justify-center text-lg font-bold hover:bg-amber-700 transition-colors"
+            className="w-8 h-8 rounded-full bg-amber-700 text-white flex items-center justify-center text-lg font-bold hover:bg-amber-600 transition-colors"
             onClick={() => {
               setShowInfoModal(true);
               setShowTooltip(false);
@@ -69,7 +67,6 @@ function App() {
         </div>
       </div>
 
-      {/* Info Modal */}
       {showInfoModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-amber-50 p-8 rounded-xl max-w-md w-full relative border-2 border-amber-200 shadow-2xl">
@@ -91,25 +88,25 @@ function App() {
               <ul className="list-disc pl-5">
                 <li>
                   The Arabic letter and its position in the alphabet on the
-                  front side
+                  front side, displayed from right to left.
                 </li>
+                <li>The name of the letter on the back side. </li>
                 <li>
-                  Its name on the back side and an 'Example' button. After
-                  clicking, an example of an Arabic word that starts with that
-                  letter is shown, including its transliteration, English
-                  meaning and an image to enhance memorization.{" "}
+                  {" "}
+                  An example of an Arabic word that starts with that letter,
+                  including its transliteration, English meaning and an image to
+                  enhance memorization.{" "}
                 </li>
               </ul>
               <p>
-                Use the buttons to shuffle the cards or return them to
-                alphabetical order.
+                You can use the two buttons to shuffle the cards or return them
+                to alphabetical order.
               </p>
             </div>
           </div>
         </div>
       )}
 
-      {/* Action Buttons */}
       <div className="flex flex-col items-center gap-4 mt-2 mb-8">
         <button
           onClick={shuffleCards}
@@ -119,7 +116,7 @@ function App() {
         </button>
         <button
           onClick={sortCards}
-          className="px-4 py-2 rounded-lg bg-amber-800 text-white shadow-lg hover:bg-amber-900 transition-colors font-amiri w-48"
+          className="px-4 py-2 rounded-lg bg-amber-500 text-white shadow-lg hover:bg-amber-800 transition-colors font-amiri w-48"
         >
           Show Alphabetical Order
         </button>

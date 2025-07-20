@@ -17,7 +17,6 @@ function FlipCards({ letters }) {
 
   return (
     <div className="flex flex-col items-center gap-6">
-      {/* Card Grid */}
       <div
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         dir="rtl"
@@ -33,13 +32,11 @@ function FlipCards({ letters }) {
         ))}
       </div>
 
-      {/* Modal */}
       {modalLetter && <LetterModal letter={modalLetter} onClose={closeModal} />}
     </div>
   );
 }
 
-// Card Component
 function Card({ letter, isFlipped, onCardClick, onExampleClick }) {
   return (
     <div className="relative w-64 h-64 cursor-pointer">
@@ -49,7 +46,6 @@ function Card({ letter, isFlipped, onCardClick, onExampleClick }) {
         }`}
         onClick={() => onCardClick(letter.id)}
       >
-        {/* Front Side */}
         <div className="absolute w-full h-full bg-amber-50 rounded-xl shadow-lg flex items-center justify-center text-6xl backface-hidden border-2 border-amber-200">
           <span className="text-amber-800">{letter.letter}</span>
           <span className="text-amber-800 text-xl absolute right-5 bottom-3 size-8">
@@ -57,11 +53,10 @@ function Card({ letter, isFlipped, onCardClick, onExampleClick }) {
           </span>
         </div>
 
-        {/* Back Side */}
-        <div className="absolute w-full h-full bg-amber-700 rounded-xl shadow-lg flex flex-col items-center justify-center text-center p-4 backface-hidden transform rotate-y-180 text-amber-50">
+        <div className="absolute w-full h-full bg-amber-900 rounded-xl shadow-lg flex flex-col items-center justify-center text-center p-4 backface-hidden transform rotate-y-180 text-amber-50">
           <h2 className="text-2xl italic font-amiri">{letter.name}</h2>
           <button
-            className="mt-4 px-4 py-2 bg-amber-600 text-amber-50 rounded-lg hover:bg-amber-500 shadow transition-colors"
+            className="mt-4 px-4 py-2 bg-amber-500 text-amber-50 rounded-lg hover:bg-amber-500 shadow transition-colors"
             onClick={(e) => onExampleClick(e, letter)}
           >
             Example
@@ -72,7 +67,6 @@ function Card({ letter, isFlipped, onCardClick, onExampleClick }) {
   );
 }
 
-// Extracted Modal Component
 function LetterModal({ letter, onClose }) {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
