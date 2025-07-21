@@ -1,12 +1,32 @@
-# React + Vite
+# Arabic Alphabet Flashcards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the first project I built with React - an interactive learning tool for the Arabic alphabet with flip cards and pronunciation examples.
 
-Currently, two official plugins are available:
+Add live preview. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+This application helps users learn the 28 letters of the Arabic alphabet through interactive flashcards. Each card displays:
+- The Arabic letter on the front
+- The letter name and an example word button on the back
+- A modal with detailed information when "Example" is clicked
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- **Interactive Flip Cards**: Cards flip to reveal letter names
+- **Example Modals**: Shows Arabic words, transliteration, and English translation
+- **Shuffle Functionality**: Randomize card order for better learning
+- **Responsive Design**: Works on mobile and desktop devices
+- **Visual Aids**: Includes images to help with memorization
+- **Custom Dataset**: I created a comprehensive JSON dataset containing all 28 Arabic letters with:
+- Accurate transliterations (DIN 31635 standard)
+- Example words for each letter
+- English translations
+- Associated images
+  
+## Technologies Used
+
+- React.js
+- Vite
+- Tailwind CSS
+- React Icons
