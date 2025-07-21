@@ -1,6 +1,6 @@
-# 🇸🇦 Arabic Alphabet Flashcards
+# Arabic Alphabet Flashcards
 
-> 📚 *An interactive React learning tool for the Arabic alphabet — with flip cards and pronunciation examples.*
+> 📚 *An interactive React tool for learning the Arabic alphabet with flip cards.*
 
 ---
 
