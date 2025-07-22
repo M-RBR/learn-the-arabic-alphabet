@@ -19,7 +19,7 @@ This application helps users learn the 28 letters of the Arabic alphabet through
 
 - 🔤 The Arabic letter on the front
 - 📝 The name of the letter on the back
-- 📖 A modal with an example word that starts with
+- 📖 A modal with an example word
 
 ---
 
