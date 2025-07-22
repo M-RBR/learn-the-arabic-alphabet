@@ -1,19 +1,6 @@
 # Arabic Alphabet Flipcards
 
-> 📚 _An interactive React tool for learning the Arabic alphabet._
-
 ---
-
-![React](https://img.shields.io/badge/React-2023-blue?logo=react)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.x-blueviolet?logo=tailwindcss)
-![Vite](https://img.shields.io/badge/Vite-fast-yellow?logo=vite)
-![Live](https://img.shields.io/badge/Live_Preview-Available-brightgreen)
-
-🔗 **[Live Preview](#)** <!-- Add your actual deployment link here -->
-
----
-
-## 🧾 Project Overview
 
 This application helps users learn the 28 letters of the Arabic alphabet through interactive flipcards. Each card displays:
 
@@ -21,15 +8,17 @@ This application helps users learn the 28 letters of the Arabic alphabet through
 - 📝 The name of the letter on the back
 - 📖 A modal with an example word
 
+🔗 **[Live Preview](https://learn-the-arabic-alphabet.netlify.app/)**
+
 ---
 
 ## ✨ Features
 
-- 🎴 **Interactive Flip Cards**: Cards flip to reveal letter names
-- 📚 **Example Modals**: Shows Arabic words, transliteration, and English translation
+- 🎴 **Interactive Flip Cards**: Cards flip to reveal the names of the letters
+- 📚 **Example Modals**: Shows Arabic example words, their transliteration, and English translation
+- 🖼️ **Visual Aids**: Includes images to help with memorization
 - 🔀 **Shuffle Functionality**: Randomize card order for better learning
 - 📱 **Responsive Design**: Works on mobile and desktop devices
-- 🖼️ **Visual Aids**: Includes images to help with memorization
 - 🗂️ **Custom Dataset**: I created a comprehensive JSON dataset containing all 28 Arabic letters with:
   - ✔️ Example words for each letter
   - ✔️ Accurate transliterations (DIN 31635 standard)
